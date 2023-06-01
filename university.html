@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+        <!--Material Icon -->
+        <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+
+        <!-- Custom  sCss -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="78">
+
+        <!--Navbar Start-->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-custom nav-sticky" id="sticky">
+            <div class="container-fluid">
+                <!-- LOGO -->
+                <a class="logo" href="index.html">
+                    <img src="images/profile.jpg" alt="" class="logo" height="60" />
+                    <b>Patrick Lee</b>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Work Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="university.html" class="nav-link">University Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- home start -->
+        <section class="bg-home bg-light" id="home">
+            <div class="home-center">
+                <div class="home-desc-center">
+                    <div class="container-fluid">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-6">
+                                <div class="home-title mo-mb-20">
+                                    <h1 >University Projects</h1>
+                                    <p class="text-dark-50 home-desc">Group and invidual projects which I have worked on as part of my degree programme from 2020 to present</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container-fluid -->
+                </div>
+            </div>
+        </section>
+        <!-- home end -->
+         <!-- home start -->
+         <section class="bg-home bg-light" id="home">
+            <div class="home-center">
+                <div class="home-desc-center">
+                    <div class="container-fluid">
+                        <div class="row align-items-center justify-content-center mt-10">
+                            <div class="col-lg-6 mb-10">
+                                <div class="mb-2">
+                                    <h3 >Applied Cryptography Project</h1>
+                                    <p class="text-dark-50 home-desc">An individual project undertaken during the latter term of my third year, 
+                                        aiming to explore both power analysis attacks on AES-128 implementations and respective countermeasures,
+                                        as well as consider broader challenges within cryptographic engineering.
+                                    </p>
+                                    <p class="text-dark-50 home-desc">Achievements:</p>
+                                    <ul>
+                                        <li>Implemented a power analysis attack in Python based on the Correlation Power Analysis attack described by Brier et al. and making use of
+                                            the Pico oscilloscope. This was successful in recovering the entire encryption key from an AES implementation running on the SCALE 
+                                            micro-controller.
+                                        </li>
+                                        <li>Dramatically increased the speed of this attack by using einstein summations to correlate matrices, 
+                                            taking the analysis time down from several minutes to several seconds 
+                                            meaning the entire attack, including trace acquisition, took ~ 2 minutes
+                                        </li>
+                                        <li>Implemented a successful countermeasure to this attack in C based on both randomly disaligning the order of operation on the encryption state and 
+                                            additive masking, with the encryption functionality running within an efficiency budget of 100ms
+                                        </li>
+                                        <li>Analysed the performance and efficiency of each component of the countermeasure as well as the 
+                                            trade-off between efficiency and the memory constraints of the device
+                                        </li>
+                                        <li>
+                                            Wrote a specification analysing possible threats, countermeasures and implementation techniques were the implementation to be extended to support
+                                            functionality required for TLS communication.
+                                        </li>
+                                    </ul>
+                                    <a href="docs/ac1.pdf" class="link mx-2">Countermeasure Specification</a>
+                                    <a href="docs/ac2.pdf" class="link mx-2">TLS Re-design Specification</a>
+                                </div>
+                                <div>
+                                    <img src="images/logo-c.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                    <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="images/applied-crypto-workflow.jpeg" class="project-image"/>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                        <div class="row align-items-center justify-content-center mt-10 mb-20">
+                            <div class="col-lg-6 order-lg-1 order-2">
+                                <iframe width="100%" height="450"src="https://www.youtube.com/embed/OzTPbe4mBXU"></iframe>           
+                            </div>
+                            <div class="col-lg-6 mb-10 order-lg-2 order-1">
+                                <div class="mb-2">
+                                    <h3>Druid Drum Circle (Video Game Project)</h1>
+                                    <p class="text-dark-50 home-desc">A group project undertaken during the latter term of my third year, 
+                                        developing an immersive rhythm game from scratch using Unity. This was an intense teamwork experience, requring an AGILE development methodology
+                                        and effective use of git for version control.
+                                    </p>
+                                    <p class="text-dark-50 home-desc">Group Achievements:</p>
+                                    <ul>
+                                        <li>Designed and built our own drum MIDI controllers using pizeo sensors, an arduino controller and LED lights, using a laser cutter to 
+                                            create the wodden components of the drum container.
+                                        </li>
+                                        <li>Implemented the ability for the game to read in music from audio files and parse it into a series of timestamped notes
+                                        </li>
+                                        <li>Replaced the existing Unity Kinect library with our own version, allowing for a single Kinect camera to track multiple bodies seperately.
+                                        </li>
+                                        <li>Implemented the ability for a variety of trees to grow completely procedurally, with each one being completely unique in both appearance and its growth animation.
+                                            This was based on research by Jinmo Kim with modifications to fit our needs
+                                        </li>
+                                        <li>
+                                            Designed 3 immersive environments using a combination of unity's built in terrain builder and detailed modelling for more granular elements
+                                        </li>
+                                        <li>
+                                            Developed our game so that it could be played in a 270 degree immersive tent, using three screens to give the illusion of virtual reality. This required 
+                                            further optimisations as the game would effectively have to produce three different renders on every frame.
+                                        </li>
+                                    </ul>
+                                    <p class="text-dark-50 home-desc">Individual focuses:</p>
+                                    <ul>
+                                        <li>Built upon work by McFee et al. to create functionality for analysing audio files, using spectral flux analysis to create a map of beat onsets against time, 
+                                        including a differentiator to determine if the beat was 
+                                        part of the underlying rhythm (e.g. a kick drum) or more 
+                                        of an off-beat transient (e.g. a hi-hat or tom) and store 
+                                        the resulting data as a JSON array.
+                                        </li>
+                                        <li>Implementing a MIDI interface so that our custom drum controllers could be used with the game </li>
+                                        <li>Developing the UI, particularly the in-game rhythm markers which would appear in time with the music</li>
+                                        <li>Integrating major features, such as the procedural trees into the bass version of the game and</li>
+                                    </ul>
+                                    <p class="text-dark-50 home-desc">Druid Drum Circle is a rhythm game in-which players must drum in time with the music, and the corresponding rhythm markers, in order
+                                        to score points and cause foliage to grow in an otherwise treeless environment. Players can pick between a 'forest', 'mountains', and 'beach' environment, 
+                                        which their druid avatars, reflecting the movements of the players from the Kinect, will fly around on a platform. 
+                                        At the end of the level, the camers will pan around the environment, showing the lush foliage which has now appeared
+                                        and the player with the highest score wins.
+                                    </p>
+                                    
+                                    <a href="docs/ddc.pdf" class="link mx-2">Project Report</a>
+                                </div>
+                                <div>
+                                    <img src="images/logo-cs.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                    <img src="images/logo-cpp.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                    <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                    <img src="images/logo-unity.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                    <img src="images/logo-arduino.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container-fluid -->
+                </div>
+            </div>
+        </section>
+        <!-- home end -->
+
+                <!-- Back to top -->    
+        <!-- <a href="#" class="back-to-top" id="back-to-top"> <i class="mdi mdi-chevron-up"> </i> </a> -->
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" class="back-to-top-btn btn btn-primary" id="back-to-top-btn"><i class="mdi mdi-chevron-up"></i></a>
+
+        <!-- javascript -->
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+    
+        <!-- custom js -->
+        <script src="js/app.js"></script>
+    </body>
