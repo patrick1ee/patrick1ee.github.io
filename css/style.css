@@ -194,7 +194,7 @@ html {
 *******************/
 .bg-home {
   position: relative;
-  padding: 200px 0px 180px 0px;
+  padding: 200px 0px 125px 0px;
 }
 
 .home-center {
@@ -565,7 +565,7 @@ a.link {
   }
 
   .bg-home {
-    padding: 130px 0px 120px 0px;
+    padding: 130px 0px 10px 0px;
   }
 
   .mo-mb-20 {
@@ -590,3 +590,19 @@ a.link {
     text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+/* Addition */
+
+div.project-container {
+  width: 50%;
+  height: 450px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+img.project-image {
+  width: 100%;
+
+}
