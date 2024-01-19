@@ -60,7 +60,7 @@
                     <div class="container-fluid">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-6">
-                                <div class="home-title mo-mb-20">
+                                <div class="home-title">
                                     <h1 >University Projects</h1>
                                     <p class="text-dark-50 home-desc">Group and invidual projects which I have worked on as part of my degree programme from 2020 to present</p>
                                 </div>
@@ -75,6 +75,105 @@
         <!-- home end -->
          <!-- home start -->
          <section class="bg-home bg-light" id="home">
+            <div class="d-flex align-items-center justify-content-center my-4">
+                <div class="project-container">
+                    <h3 >ROP Shellcode Compiler For Antivirus Evasion</h3>
+                    <div class="row align-items-center justify-content-center mt-10">
+                        <div class="col-12 col-md-6 mb-10">
+                            <div class="mb-2">
+                                <p class="text-dark-50 home-desc">A project done with a partner in which we built a tool that take certain Shellcodes
+                                    and compile them into a ROPchain exploit, given binary vulnerable to buffer overflow. The exploit can then be used to hijack control flow 
+                                    and execute code fragments already within the compiled binary executed arbitrarily to achieve the same
+                                    result as executing the shellcode and bypassing defences such as executable space protection, code signing and ASLR.
+                                </p>
+                                <p class="text-dark-50 home-desc">This project gave huge insight into security considerations in software development as well as its
+                                    low level underpinnings
+                                </p>
+                                <a href="https://github.com/patrick1ee/CROPgadget" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-brands fa-github mx-1"></i>Repository</a>
+                                <a href="docs/sss.pdf" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Report</a>
+                            </div>
+                            <b>Techs used: </b>
+                            <div>
+                                <img src="images/logo-asm.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-md-flex justify-content-center align-items-start">
+                            <div style="width: 90%">
+                                <img src="images/rop.png" class="project-image"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container-fluid -->
+            </div>
+            <div class="d-flex align-items-center justify-content-center my-4">
+                <div class="project-container">
+                    <h3 >Profitability Analysis of Trading Agents</h3>
+                    <div class="row align-items-center justify-content-center mt-10">
+                        <div class="col-12 col-md-6 mb-10">
+                            <div class="mb-2">
+                                <p class="text-dark-50 home-desc">An indvidual project in which I ran large number of simulations, involving different trading agents in variable market conditions
+                                    (supply-demand dynamics, different order-schedules, market shocks and proportion of different agents) and then performed rigorous testing to compare profitability
+                                    and make suggestions to explain these results. Amongst the agents analysed were various zero-intelligence algorithms, simplified stategies such as Giveaway and Shaver and
+                                    more advanced strategies such as the Stochastic Hillclimber and Parameterized Response models.
+                                </p>
+                                <p class="text-dark-50 home-desc">This project was invaluable in learning the underpinnings of successful trading algorithms as well as rigorous statistical analysis
+                                </p>
+                                <a href="https://github.com/patrick1ee/CROPgadget" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-brands fa-github mx-1"></i>Repository</a>
+                                <a href="docs/sss.pdf" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Report</a>
+                            </div>
+                            <b>Techs used: </b>
+                            <div>
+                                <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-pd.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-md-flex justify-content-center align-items-start">
+                            <div style="width: 90%">
+                                <img src="images/rop.png" class="project-image"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container-fluid -->
+            </div>
+            <div class="d-flex align-items-center justify-content-center my-4">
+                <div class="project-container">
+                    <h3 >AES Key Recovery and Countermeasures</h3>
+                    <div class="row align-items-center justify-content-center mt-10">
+                        <div class="col-12 col-md-6 mb-10">
+                            <div class="mb-2">
+                                <p class="text-dark-50 home-desc">An individual project undertaken during the latter term of my third year, 
+                                    aiming to explore both power analysis attacks on AES-128 implementations and respective countermeasures.
+                                    This centered around a micro-controller with firmware to perform encryption and decryption operations, interacting
+                                    with a host via UART. I developed this firmware and demonstrated an efficient key recovery attack against it. I then implemented counter-measures for this
+                                    attack, using operation permutation and masking, and wrote a specification considering further threats and counter-measures 
+                                    for other functionalilty required for TLS communication
+                                </p>
+                                <a href="https://gitfront.io/r/user-4126339/GMe8q27Qi2dy/AttackHW/" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-brands fa-github mx-1"></i>Repository</a>
+                                <a href="docs/ac1.pdf" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Secured Spec.</a>
+                                <a href="docs/ac2.pdf" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-solid fa-file mx-1"></i>TLS Spec.</a>
+                            </div>
+                            <b>Techs used: </b>
+                            <div>
+                                <img src="images/logo-c.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-uart.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-md-flex justify-content-center align-items-start">
+                            <div style="width: 90%">
+                                <img src="images/applied-crypto-workflow.jpeg" class="project-image"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container-fluid -->
+            </div>
             <div class="home-center">
                 <div class="home-desc-center">
                     <div class="container-fluid">

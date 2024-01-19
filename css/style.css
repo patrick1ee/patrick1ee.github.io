@@ -194,7 +194,7 @@ html {
 *******************/
 .bg-home {
   position: relative;
-  padding: 200px 0px 125px 0px;
+  padding: 200px 0px 0px 0px;
 }
 
 .home-center {
@@ -565,7 +565,7 @@ a.link {
   }
 
   .bg-home {
-    padding: 130px 0px 10px 0px;
+    padding: 130px 0px 0px 0px;
   }
 
   .mo-mb-20 {
@@ -604,5 +604,13 @@ div.project-container {
 
 img.project-image {
   width: 100%;
+  object-fit: contain;
+}
 
+video.project-vide {
+  object-fit: fill;
+  position: absolute;
+  top: 10;
+  left: 10;
+  max-width: 100px;
 }
