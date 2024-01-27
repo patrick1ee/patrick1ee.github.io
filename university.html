@@ -60,7 +60,7 @@
                     <div class="container-fluid">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-6">
-                                <div class="home-title mo-mb-20">
+                                <div class="home-title">
                                     <h1 >University Projects</h1>
                                     <p class="text-dark-50 home-desc">Group and invidual projects which I have worked on as part of my degree programme from 2020 to present</p>
                                 </div>
@@ -74,234 +74,201 @@
         </section>
         <!-- home end -->
          <!-- home start -->
-         <section class="bg-home bg-light" id="home">
-            <div class="home-center">
-                <div class="home-desc-center">
-                    <div class="container-fluid">
-                        <div class="row align-items-center justify-content-center mt-10">
-                            <div class="col-lg-6 mb-10">
-                                <div class="mb-2">
-                                    <h3 >Applied Cryptography Project</h1>
-                                    <p class="text-dark-50 home-desc">An individual project undertaken during the latter term of my third year, 
-                                        aiming to explore both power analysis attacks on AES-128 implementations and respective countermeasures,
-                                        as well as consider broader challenges within cryptographic engineering.
-                                    </p>
-                                    <p class="text-dark-50 home-desc">Achievements:</p>
-                                    <ul>
-                                        <li>Implemented a power analysis attack in Python based on the Correlation Power Analysis attack described by Brier et al. and making use of
-                                            the Pico oscilloscope. This was successful in recovering the entire encryption key from an AES implementation running on the SCALE 
-                                            micro-controller.
-                                        </li>
-                                        <li>Dramatically increased the speed of this attack by using einstein summations to correlate matrices, 
-                                            taking the analysis time down from several minutes to several seconds 
-                                            meaning the entire attack, including trace acquisition, took ~ 2 minutes
-                                        </li>
-                                        <li>Implemented a successful countermeasure to this attack in C based on both randomly disaligning the order of operation on the encryption state and 
-                                            additive masking, with the encryption functionality running within an efficiency budget of 100ms
-                                        </li>
-                                        <li>Analysed the performance and efficiency of each component of the countermeasure as well as the 
-                                            trade-off between efficiency and the memory constraints of the device
-                                        </li>
-                                        <li>
-                                            Wrote a specification analysing possible threats, countermeasures and implementation techniques were the implementation to be extended to support
-                                            functionality required for TLS communication.
-                                        </li>
-                                    </ul>
-                                    <a href="https://gitfront.io/r/user-4126339/GMe8q27Qi2dy/AttackHW/" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-brands fa-github mx-1"></i>Repository</a>
-                                    <a href="docs/ac1.pdf" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Countermeasure Specification</a>
-                                    <a href="docs/ac2.pdf" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-solid fa-file mx-1"></i>TLS Re-design Specification</a>
-                                </div>
-                                <b>Techs used: </b>
-                                <div>
-                                    <img src="images/logo-c.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                    <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                </div>
+         <section class="bg-home bg-light pb-5" id="home">
+            <div class="d-flex align-items-center justify-content-center my-4">
+                <div class="project-container">
+                    <h3 >ROP Shellcode Compiler For Antivirus Evasion</h3>
+                    <div class="row align-items-center justify-content-center mt-10">
+                        <div class="col-12 col-md-6 mb-10">
+                            <div class="mb-2">
+                                <p class="text-dark-50 home-desc">A project done with a partner in which we built a tool that take certain Shellcodes
+                                    and compile them into a ROPchain exploit, given binary vulnerable to buffer overflow. The exploit can then be used to hijack control flow 
+                                    and execute code fragments already within the compiled binary executed arbitrarily to achieve the same
+                                    result as executing the shellcode and bypassing defences such as executable space protection, code signing and ASLR.
+                                </p>
+                                <p class="text-dark-50 home-desc">This project gave huge insight into security considerations in software development as well as its
+                                    low level underpinnings
+                                </p>
+                                <a href="https://github.com/patrick1ee/CROPgadget" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-brands fa-github mx-1"></i>Repository</a>
+                                <a href="docs/sss.pdf" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Report</a>
                             </div>
-                            <div class="col-lg-6">
+                            <b>Techs used: </b>
+                            <div>
+                                <img src="images/logo-asm.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-md-flex justify-content-center align-items-start">
+                            <div style="width: 90%">
+                                <img src="images/rop.png" class="project-image"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container-fluid -->
+            </div>
+            <div class="d-flex align-items-center justify-content-center my-4">
+                <div class="project-container">
+                    <h3 >Profitability Analysis of Trading Agents</h3>
+                    <div class="row align-items-center justify-content-center mt-10">
+                        <div class="col-12 col-md-6 mb-10">
+                            <div class="mb-2">
+                                <p class="text-dark-50 home-desc">An indvidual project in which I ran simulations, involving different trading agents in a wide range of market conditions and then ran testing to compare performance. Amongst the agents analysed were various zero-intelligence algorithms, simplified stategies such as Giveaway and Shaver and
+                                    more advanced strategies such as the Stochastic Hillclimber and Parameterized Response models.
+                                </p>
+                                <p class="text-dark-50 home-desc">This project was invaluable in learning the underpinnings of successful trading algorithms as well as rigorous statistical analysis
+                                </p>
+                                <a href="docs/CW-IEFT.pdf" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Jupyter Notebook</a>
+                            </div>
+                            <b>Techs used: </b>
+                            <div>
+                                <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-pd.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-md-flex justify-content-center align-items-start">
+                            <div style="width: 70%">
+                                <img src="images/candlestick.jpg" class="project-image"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container-fluid -->
+            </div>
+            <div class="d-flex align-items-center justify-content-center my-4">
+                <div class="project-container">
+                    <h3 >AES Key Recovery and Countermeasures</h3>
+                    <div class="row align-items-center justify-content-center mt-10">
+                        <div class="col-12 col-md-6 mb-10">
+                            <div class="mb-2">
+                                <p class="text-dark-50 home-desc">An individual project undertaken during the latter term of my third year, 
+                                    aiming to explore both power analysis attacks on AES-128 implementations and respective countermeasures.
+                                    This centered around a micro-controller with firmware to perform encryption and decryption operations, interacting
+                                    with a host via UART. I developed this firmware and demonstrated an efficient key recovery attack against it. I then implemented counter-measures for this
+                                    attack, using operation permutation and masking, and wrote a specification considering further threats and counter-measures 
+                                    for other functionalilty required for TLS communication
+                                </p>
+                                <a href="https://gitfront.io/r/user-4126339/GMe8q27Qi2dy/AttackHW/" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-brands fa-github mx-1"></i>Repository</a>
+                                <a href="docs/ac1.pdf" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Secured Spec.</a>
+                                <a href="docs/ac2.pdf" target="_blank" class="btn btn-outline-secondary mx-1 mt-1"><i class="fa fa-solid fa-file mx-1"></i>TLS Spec.</a>
+                            </div>
+                            <b>Techs used: </b>
+                            <div>
+                                <img src="images/logo-c.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-uart.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-md-flex justify-content-center align-items-start">
+                            <div style="width: 90%">
                                 <img src="images/applied-crypto-workflow.jpeg" class="project-image"/>
                             </div>
                         </div>
-                        <!-- end row -->
-                        <div class="row align-items-center justify-content-center mt-10 mb-20">
-                            <div class="col-lg-6 order-lg-1 order-2">
-                                <iframe width="100%" height="450"src="https://www.youtube.com/embed/OzTPbe4mBXU"></iframe>           
-                            </div>
-                            <div class="col-lg-6 mb-10 order-lg-2 order-1">
-                                <div class="mb-2">
-                                    <h3>Druid Drum Circle (Video Game Project)</h1>
-                                    <p class="text-dark-50 home-desc">A group project undertaken during the latter term of my third year, 
-                                        developing an immersive rhythm game using the Unity engine. This was an intense teamwork experience, requring an AGILE development methodology
-                                        and effective use of git for version control.
-                                    </p>
-                                    <p class="text-dark-50 home-desc">Group Achievements:</p>
-                                    <ul>
-                                        <li>Designed and built our own drum MIDI controllers using pizeo sensors, an arduino controller and LED lights, using a laser cutter to 
-                                            create the wooden components of the drum container.
-                                        </li>
-                                        <li>Implemented the ability for the game to read in music from audio files and parse it into a series of timestamped notes
-                                        </li>
-                                        <li>Replaced the existing Unity Kinect library with our own version, allowing for a single Kinect camera to track multiple bodies seperately.
-                                        </li>
-                                        <li>Implemented the ability for a variety of trees to grow completely procedurally, with each one being completely unique in both appearance and its growth animation.
-                                            This was based on research by Jinmo Kim with modifications to fit our needs
-                                        </li>
-                                        <li>
-                                            Designed 3 immersive environments using a combination of unity's built in terrain builder and detailed modelling for more granular elements
-                                        </li>
-                                        <li>
-                                            Developed our game so that it could be played in a 270 degree immersive tent, using three screens to give the illusion of virtual reality. This required 
-                                            further optimisations as the game would effectively have to produce three different renders on every frame.
-                                        </li>
-                                    </ul>
-                                    <p class="text-dark-50 home-desc">Individual focuses:</p>
-                                    <ul>
-                                        <li>Built upon work by McFee et al. to create functionality for analysing audio files, using spectral flux analysis to create a map of beat onsets against time, 
-                                        including a differentiator to determine if the beat was 
-                                        part of the underlying rhythm (e.g. a kick drum) or more 
-                                        of an off-beat transient (e.g. a hi-hat or tom) and store 
-                                        the resulting data as a JSON array.
-                                        </li>
-                                        <li>Implementing a MIDI interface so that our custom drum controllers could be used with the game </li>
-                                        <li>Developing the UI, particularly the in-game rhythm markers which would appear in time with the music</li>
-                                        <li>Integrating major features, such as the procedural trees into the bass version of the game and</li>
-                                    </ul>
-                                    <p class="text-dark-50 home-desc">Druid Drum Circle is a rhythm game in-which players must drum in time with the music, and the corresponding rhythm markers, in order
-                                        to score points and cause foliage to grow in an otherwise treeless environment. Players can pick between a 'forest', 'mountains', and 'beach' environment, 
-                                        which their druid avatars, reflecting the movements of the players from the Kinect, will fly around on a platform. 
-                                        At the end of the level, the camers will pan around the environment, showing the lush foliage which has now appeared
-                                        and the player with the highest score wins.
-                                    </p>
-                                    <a href="docs/ddc.pdf" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Project Report</a>
-                                </div>
-                                <b>Techs used: </b>
-                                <div>
-                                    <img src="images/logo-cs.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                    <img src="images/logo-cpp.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                    <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                    <img src="images/logo-unity.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                    <img src="images/logo-arduino.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                        <div class="row align-items-center justify-content-center mt-10">
-                            <div class="col-lg-6 mb-10">
-                                <div class="mb-2">
-                                    <h3 >Machine Learning Project</h1>
-                                    <p class="text-dark-50 home-desc">An individual project undertaken during the first term of my third year, 
-                                        requring in-depth use of a variet of machine learning techniques including Mixture Models, Neural Networks, Support Vector Machines, Bayesian Regression,
-                                        Trees and Ensembles.
-                                    </p>
-                                    <p class="text-dark-50 home-desc">Achievements:</p>
-                                    <ul>
-                                        <li>Fit a Gaussian Mixture model to the public fashion-MNIST dataset and analysed the classification accuracy by using Completeness and Homogeneity scores
-                                        </li>
-                                        <li>Fit a feed-forward Neueral Network to the fashion-MNIST dataset, achieving a classifcation accuracy of 86% and whilst analysing the trade-off between number of hidden neurons and training time.
-                                        </li>
-                                        <li>Used a randomized search to find optimal hyper-parameters for this nerual network and assessed which hyper-parameters had the largest overall effect on performance
-                                        </li>
-                                        <li>Fit a support vector machine to this dataset and performed hyper-parameter tuning and analysis, similar to with the neural network</li>
-                                        <li>Used Bayesian linear regression to predict median house value from the California Housing dataset, using the Hamiltonian Markov Chain Monte Carlo to obtain posterior
-                                            distributions for each model parameter, and assessing performance in comparison to least squares regression and when fitted to different sample sizes.
-                                        </li>
-                                        <li>Used a grid search to tune the hyper-parameters of a CART decision tree for use with the California Housing dataset, analysing each parameters effect on model performance
-                                        </li>
-                                        <li>Analysed the difference in accuracy of the tuned CART decision tree with that of Bayesian linear regression for the same dataset
-                                        </li>
-                                        <li>Analysed the tradeoff of number of estimators with training time for a Random Forest Regressor</li>
-                                    </ul>
-                                    <a href="https://gitfront.io/r/user-4126339/vaW5NEEvUgR4/ml-coursework/" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-brands fa-github mx-1"></i>Repository</a>
-                                    <a href="docs/ml.pdf" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Report</a>
-                                </div>
-                                <b>Techs used: </b>
-                                <div>
-                                    <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                    <img src="images/logo-pymc.jpg" class="tech-logo mx-1 mt-1 mb-3"/>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img src="images/california-plot.png" class="project-image"/>
-                                    </div>
-                                    <div class="col-6">
-                                        <img src="images/pca-cluster-gmm.png" class="project-image"/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <img src="images/dtr-gridcv-hyperparams-mean-test-score-2.png" class="project-image"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                        <div class="row align-items-center justify-content-center mt-10 mb-20">
-                            <div class="col-lg-6 order-lg-1 order-2">
-                                <img src="images/climatearchive.jpg" class="project-image"/>              
-                            </div>
-                            <div class="col-lg-6 mb-10 order-lg-2 order-1">
-                                <div class="mb-2">
-                                    <h3>Climate Archive</h1>
-                                    <p class="text-dark-50 home-desc">A group project to add improvements to a researcher's web platform, designed to help other
-                                        researchers easily access and visualise past climate data. Our role revolved around the creation of a back-end to serve this data and
-                                        the addition of support in the front-end to process and visualise this data
-                                    </p>
-                                    <p class="text-dark-50 home-desc">Group Achievements:</p>
-                                    <ul>
-                                        <li>Developed a new backend to serve the stored climate data, able to accept search requests by end users for specific data sets
-                                        </li>
-                                        <li>Implemented support for visualising this data in charts and allowing the user to download datasets pertaining to locations and time specified
-                                        </li>
-                                    </ul>
-                                    <a href="https://gitfront.io/r/user-4126339/Q9WpQshtFRwb/2021-climate-archive-frontend/" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-brands fa-github mx-1"></i>Repository</a>
-                                </div>
-                                <b>Techs used: </b>
-                                <div>
-                                    <img src="images/logo-html.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                    <img src="images/logo-js.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                    <img src="images/logo-java.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                    <img src="images/logo-spring.jpg" class="tech-logo mx-1 mt-1 mb-3"/>
-                                    <img src="images/logo-docker.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row -->
-                        <!--<div class="row align-items-center justify-content-center mt-10 mb-20">
-                            <div class="col-lg-6 mb-10">
-                                <div class="mb-2">
-                                    <h3>3D Rendering Engine</h1>
-                                    <p class="text-dark-50 home-desc">A raytracing engine written in C++ using SDL2 as part of my Computer Graphics unit, making use
-                                        of a number of rendering techniques including:
-                                    </p>
-                                    <ul>
-                                        <li>Soft shadows
-                                        </li>
-                                        <li>Specular lighting
-                                        </li>
-                                        <li>Phong shading
-                                        </li>
-                                        <li>Reflective and refractive materials
-                                        </li>
-                                        <li>Texture mapping
-                                        </li>
-                                    </ul>
-                                    <a href="docs/ddc.pdf" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Project Report</a>
-                                </div>
-                                <b>Techs used: </b>
-                                <div>
-                                    <img src="images/logo-cpp.png" class="tech-logo mx-1 mt-1 mb-3"/>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <img src="images/rendering-engine-1.jpg" class="project-image"/>
-                            </div>
-                        </div>-->
-                        <!-- end row -->
-
                     </div>
-                    <!-- end container-fluid -->
+                    <!-- end row -->
                 </div>
+                <!-- end container-fluid -->
+            </div>
+            <div class="d-flex align-items-center justify-content-center my-4">
+                <div class="project-container">
+                    <h3 >Druid Drum Circle (Video Game Project)</h3>
+                    <div class="row align-items-center justify-content-center mt-10">
+                        <div class="col-12 col-md-6 mb-10">
+                            <div class="mb-2">
+                                <p class="text-dark-50 home-desc">A team project in which we developed an immersive rhythm game in which players play drums in time to
+                                    descending "beat" markers (think Guitar Hero) to cast spells which would cause procedural generation of trees and foliage, themed to each
+                                    level (mountains, forest, beach). Challenges included building drum hardware, analysis of music tracks, 
+                                    procedural tree growth and integrating other hardware (Kinect, multi-screen immersive tent).
+                                </p>
+                                <p class="text-dark-50 home-desc">
+                                    This was a good exposure to an intense team project using AGILE and SCRUM methodology.
+                                </p>
+                                <a href="docs/ddc.pdf" target="_blank" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Project Report</a></div>
+                            <b>Techs used: </b>
+                            <div>
+                                <img src="images/logo-cs.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-cpp.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-unity.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-arduino.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-md-flex justify-content-center align-items-start">
+                            <div style="width: 90%">
+                                <iframe width="100%" height="250"src="https://www.youtube.com/embed/OzTPbe4mBXU"></iframe>    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container-fluid -->
+            </div>
+            <div class="d-flex align-items-center justify-content-center my-4">
+                <div class="project-container">
+                    <h3 >Machine Learning Coursework</h3>
+                    <div class="row align-items-center justify-content-center mt-10">
+                        <div class="col-12 col-md-6 mb-10">
+                            <div class="mb-2">
+                                <p class="text-dark-50 home-desc">An individual project aiming to apply learnt theory and use and comparison a wide variety of machine learning
+                                    methods across a variety of use cases and data-sets, including neural nets, support vector machines, mixture models, Markov-Chain Monte-Carlo,
+                                    Bayesian regression, Ensembles and CART decision trees as well as hyper-parameter tuning and principal component analysis.
+                                </p>
+                                <p class="text-dark-50 home-desc">This was a highly useful exploration into the theory and application of moder machine learning methods,
+                                    as well as evaluation and presentatio of results.
+                                </p>
+                                <a href="https://gitfront.io/r/user-4126339/vaW5NEEvUgR4/ml-coursework/" target="_blank" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-brands fa-github mx-1"></i>Repository</a>
+                                <a href="docs/ml.pdf" target="_blank" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-solid fa-file mx-1"></i>Report</a></div>
+                            <b>Techs used: </b>
+                            <div>
+                                <img src="images/logo-python.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-pymc.jpg" class="tech-logo mx-1 mt-1 mb-3"/>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-md-flex justify-content-center align-items-start">
+                            <div style="width: 70%">
+                                <img src="images/nn.jpg" class="project-image"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container-fluid -->
+            </div>
+            <div class="d-flex align-items-center justify-content-center my-4">
+                <div class="project-container">
+                    <h3>Climate Archive</h3>
+                    <div class="row align-items-center justify-content-center mt-10">
+                        <div class="col-12 col-md-6 mb-10">
+                            <div class="mb-2">
+                                <p class="text-dark-50 home-desc">A group project to add improvements to a researcher's web platform, designed to help other
+                                    researchers easily access and visualise past climate data. Our role revolved around the creation of a back-end to serve this data (Spring) and
+                                    the addition of support in the front-end to process and visualise this data (HTML, JS, Docker).
+                                </p>
+                                <p class="text-dark-50 home-desc">This was a good experience in AGILE development, with frequent meetings with our client to
+                                    deliver each version of the project and respond to changing requirements and new feature suggestions.
+                                </p>
+                                <a href="https://gitfront.io/r/user-4126339/Q9WpQshtFRwb/2021-climate-archive-frontend/" target="_blank" class="btn btn-outline-secondary mx-2 mt-1"><i class="fa fa-brands fa-github mx-1"></i>Repository</a>
+                            </div>
+                            <b>Techs used: </b>
+                            <div>
+                                <img src="images/logo-html.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-js.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-java.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-spring.jpg" class="tech-logo mx-1 mt-1 mb-3"/>
+                                <img src="images/logo-docker.png" class="tech-logo mx-1 mt-1 mb-3"/>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-md-flex justify-content-center align-items-start">
+                            <div style="width: 90%">
+                                <img src="images/climatearchive.jpg" class="project-image"/>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container-fluid -->
             </div>
         </section>
         <!-- home end -->
