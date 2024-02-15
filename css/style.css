@@ -213,7 +213,7 @@ html {
 }
 
 .home-title .home-desc {
-  max-width: 605px;
+  max-width: 805px;
   font-size: 16px;
 }
 .home-title .subscribe input {
@@ -287,7 +287,7 @@ h1.name {
 }
 
 a.btn-projects {
-  width: 10rem;
+  width: 13rem;
 }
 
 img.project-image {
