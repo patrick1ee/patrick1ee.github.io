@@ -594,12 +594,33 @@ a.link {
 
 /* Addition */
 
-div.project-container {
-  width: 50%;
-  height: 450px;
-  background-color: white;
-  border-radius: 16px;
-  padding: 20px;
+@media only screen and (min-width: 1751px) {
+  div.project-container {
+    width: 50%;
+    height: 450px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1750px) and (min-width: 1351px) {
+  div.project-container {
+    width: 60%;
+    height: 500px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  div.project-container {
+    width: 90%;
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+  }
 }
 
 img.project-image {
