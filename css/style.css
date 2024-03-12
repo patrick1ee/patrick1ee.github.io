@@ -594,6 +594,10 @@ a.link {
 
 /* Addition */
 
+a.contact-link {
+  width: 110px;
+}
+
 @media only screen and (min-width: 1751px) {
   div.project-container {
     width: 50%;
